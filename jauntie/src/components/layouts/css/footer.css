@@ -1,0 +1,117 @@
+/*FOOTER TOP*/
+#footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: relative;
+}
+
+#footer-top div h4{
+    margin: 0px;
+    font-family: Nunito;
+    font-style: normal;
+    font-size: 18px;
+}
+
+#footer-top div p {
+    width: 480px;
+    margin: 0px;
+    font-family: Nunito;
+    font-style: normal;
+    font-size: 18px;
+}
+
+#email-subscribe input {
+    padding-left: 10px;
+    width: 355px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+#email-subscribe button {
+    position: absolute;
+    width: 120px;
+    font-size: 16px;
+    color: white;
+    background-color: #F42D59;
+}
+
+#email-subscribe input, button {
+    border: 1px solid #F42D59;
+    height: 40px;
+    font-family: Nunito;
+}
+
+#email-subscribe ::placeholder {
+    color: #AFAFAF;
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#email-subscribe input:focus{
+    background-color: #f2f2f2;
+    outline: none;
+}
+
+/*FOOTER BOTTOM*/
+.section-footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: #333333;
+    height: 155px; 
+}
+
+#footer-bottom{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    font-family: Nunito;
+    color: white;
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer-bottom figure{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+
+#footer-bottom figure img{
+    margin-right: 10px;
+    width: 68.25px;
+    height: 31.5px;
+    position: relative;
+    top: -5px;
+}
+
+#footer-bottom h4{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#footer-bottom div p{
+
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#footer-bottom a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+}

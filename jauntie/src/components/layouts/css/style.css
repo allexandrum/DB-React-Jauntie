@@ -1,0 +1,251 @@
+/*Section BG*/
+
+div#bg0{
+    height: 875px;
+    background: #dadada;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 650px;
+}
+
+div#bg1{
+    height: 400px;
+    background: #dadada;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 1753px;
+}
+
+div#bg2{
+    height: 1000px;
+    background: #dadada;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 2768px;
+}
+
+/*Section Main*/
+
+div#main-div{
+    background: #F42D59;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    bottom: 600px;
+    z-index: 2;
+    color: white;
+}
+
+div#main-div div {
+    padding: 30px;
+}
+
+div#main-div h1{
+    font-weight: 400;
+    font-size: 38px;
+    margin: 0;
+}
+
+div#main-div p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+ div#sliders{
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    top: 100px;
+    left: 250px;
+    z-index: 1;
+}
+
+div#last-main-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    height: 350px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    bottom: 350px;
+    z-index: 2;
+}
+
+.a-container{
+    background: white;
+    text-decoration: none;
+    color: #333333;
+}
+.a-container:visited{
+    color: #333333;
+}
+.a-container:hover{
+    color: #F42D59;
+}
+
+.div-container{
+    padding: 30px 20px;
+    height: 290px;
+    text-align: center;
+}
+
+.div-container img{
+    height: 80px;
+    width: 80px;
+}
+
+.div-container h5{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/*Section pets*/
+
+section#pets{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    bottom: 200px;
+}
+
+.img-pets-1{
+    position: relative;
+    top: 25px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+div#pets-1 p{
+    width: 450px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pets-logo{
+    height: 30.625px;
+    width: 152.5px;
+    position: relative;
+    top: 80px;
+}
+
+div#pets-2 h2{
+    font-size: 64px;
+    position: relative;
+    top: 30px;
+}
+
+.img-pets-2{
+    position: relative;
+    top: 150px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+/*Section travelling*/
+
+section#travelling{
+    display: grid;
+    grid-template-columns: 5fr 8fr;
+    position: relative;
+    bottom: 100px;
+}
+
+section#travelling img{
+    width: 700px;
+    position: relative;
+    left: 70px;
+}
+
+section#travelling h2{
+    font-size: 36px;
+}
+
+section#travelling p{
+    font-size: 22px;
+}
+
+/*Section FAQ*/
+
+section#FAQ{
+    background: white;
+    padding-right: 60px;
+    padding-left: 60px;
+    box-shadow: 0 0 10px #333333;
+    position: relative;
+    top: 20px;
+}
+
+section#FAQ header{
+    height: 150px;
+    padding-bottom: 30px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+section#FAQ header img{
+    width: 91px;
+    height: 42px;
+    position: relative;
+    top: 3px;
+}
+
+section#FAQ header span{
+    color: #333333;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+section#FAQ header hr{
+    border: 0px;
+    width: 1250px;
+    height: 10px;
+    position: relative;
+    top: 5px;
+    right: 60px;
+    background: linear-gradient(to bottom ,#33333366, #ffffff);
+}
+
+section#FAQ header h2{
+    color: #2222221A;
+    font-weight: bold;
+    font-size: 72px;
+    position: relative;
+    bottom: 44px;
+    left: 980px;
+    width: 150px;
+}
+
+section#FAQ article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px; 
+    position: relative; 
+    top: -50px;
+}
+
+section#FAQ article div h4{
+    font-size: 16px;
+    margin: 0;
+}
+section#FAQ article div p{
+    font-size: 14px;
+    margin-top: 0;
+}
+
+section#FAQ article div #sp{
+    font-size: 10px;
+    margin-top: 0;
+    line-height: inherit;
+}
+.article-div-2{
+    position: relative;
+    bottom: 27px;
+}

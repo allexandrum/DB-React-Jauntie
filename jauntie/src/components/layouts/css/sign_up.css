@@ -1,0 +1,103 @@
+body{
+    width: 1250px;
+    margin: 0 auto;
+    font-family: Nunito;
+}
+/*Section main*/
+section#accmain header{
+    height: 150px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+section#accmain header p{
+    color: #333333;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+section#accmain header hr{
+    border: 0px;
+    width: 1250px;
+    height: 10px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(to bottom ,#33333366, #ffffff);
+}
+
+section#accmain header span{
+    color: #F42D59;
+}
+
+.art-info{
+    color: #3E3F43;
+    font-size: 36px;
+    position: relative;
+    top: -100px;
+}
+
+.art-input{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    position: relative;
+    bottom: 50px;
+}
+
+.div-input1{
+    padding: 0 50px;
+    border-right: dashed 3px #33333366;
+    min-height: 100px;
+}
+
+.div-input1 input{
+    width: 434.917px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #F42D59;
+    height: 40px;
+    margin-top: 25px;
+}
+
+.div-input1 ::placeholder {
+    color: #AFAFAF;
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.div-input1 input:focus{
+    background-color: #f2f2f2;
+    outline: none;
+}
+
+.div-input2{
+    padding: 0 50px;
+    min-height: 100px;
+    text-align: center;
+}
+
+.div-input2 span{
+    font-size: 36px;
+    color: #3E3F43;
+}
+
+.div-input2 p{
+    font-size: 24px;
+    color: #3E3F43;
+    text-align: left;
+}
+
+.div-input2 button{
+    border: 1px solid #F42D59;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: #F42D59;
+    margin-top: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 150px;
+}
+

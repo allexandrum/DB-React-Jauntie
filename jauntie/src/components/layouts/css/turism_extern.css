@@ -1,0 +1,102 @@
+body{
+    width: 1250px;
+    margin: 0 auto;
+    font-family: Nunito;
+}
+/*Section header*/
+section#teheader header{
+    height: 150px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+section#teheader header p{
+    color: #333333;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+section#teheader header hr{
+    border: 0px;
+    width: 1150px;
+    height: 10px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(to bottom ,#33333366, #ffffff);
+}
+
+section#teheader header span{
+    color: #F42D59;
+}
+
+/*Section main*/
+section#temain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    column-gap: 25px;
+    row-gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#a-container{
+    background: white;
+    text-decoration: none;
+    color: #333333;
+    box-shadow: 0 0 5px  #33333366;
+}
+
+#a-container:visited{
+    color: #333333;
+}
+
+#a-container:hover{
+    color: #F42D59;
+}
+
+#div-container{
+    padding: 30px 20px;
+    height: 290px;
+    text-align: center;
+}
+
+#a-container img{
+    height: 228.75px;
+    width: 228.75px;
+}
+
+#a-container p{
+    font-size: 20px;
+}
+
+/*Section pages-buttons*/
+section#pages-buttons{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    height: 50px;
+    padding: 50px 562.5px;
+    font-size: 37px;
+}
+
+section#pages-buttons a{
+    text-decoration: none;
+    color: #333333;
+    box-shadow: 0 0 5px  #33333366;
+}
+
+section#pages-buttons a:visited{
+    color: #333333;
+}
+
+section#pages-buttons a:hover{
+    color: #F42D59;
+}
+
+.page-a-active{
+    border: 2px solid #F42D59;
+}

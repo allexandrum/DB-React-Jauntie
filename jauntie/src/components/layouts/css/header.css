@@ -1,0 +1,46 @@
+/*HEADER*/
+.header-logo-nav{ 
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    margin-top: 15px;
+    margin-bottom: 130px;
+}
+
+header img#logo-name{
+    height: 40.83px;
+    width: 203.33px;
+    position: relative;
+    bottom: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #333333;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    top: 10px;
+    left: 25px;
+}
+
+header nav a:hover{
+    color: #d32c50;
+}
+
+header nav a.active{
+    color: #F42D59;
+}
+hr#header-hr{
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 100px;
+    border: 0;
+    top: -35px;
+    box-shadow: 0 0 5px  #33333366;
+    
+}

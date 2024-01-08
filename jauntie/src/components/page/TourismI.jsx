@@ -1,17 +1,28 @@
 import '../layouts/css/turism_intern.css'
-
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const TourismI = () => {
+const TourismE = () => {
   const [error, setError] = useState(null);
-  const [itourisms, setItourisms] = useState([]);
+  const [tours, setTours] = useState([]);
+  const [images, setImages] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
+    // Fetch tours
     axios
-      .get("http://localhost:1337/api/turismuri-internes?populate=Poza")
-      .then(({ data }) => setItourisms(data.data))
+      .get("http://localhost:5000/tours")
+      .then(({ data }) => {
+        // Filter tours to include only those with IDs up to 22
+        const filteredTours = data.filter((tour) => tour.id > 22);
+        setTours(filteredTours);
+      })
+      .catch((error) => setError(error));
+  
+    // Fetch images
+    axios
+      .get("http://localhost:5000/")
+      .then(({ data }) => setImages(data))
       .catch((error) => setError(error));
   }, []);
 
@@ -19,15 +30,15 @@ const TourismI = () => {
     if (searchTerm === "") {
       // If search term is empty, show all items
       axios
-        .get("http://localhost:1337/api/turismuri-internes?populate=Poza")
-        .then(({ data }) => setItourisms(data.data))
+        .get("http://localhost:5000/tours")
+        .then(({ data }) => setTours(data))
         .catch((error) => setError(error));
     } else {
-      // Filter itourisms based on search term
-      const filteredItourisms = itourisms.filter(({ attributes }) =>
-        attributes.Denumire.toLowerCase().includes(searchTerm.toLowerCase())
+      // Filter tours based on search term
+      const filteredTours = tours.filter(({ title }) =>
+        title.toLowerCase().includes(searchTerm.toLowerCase())
       );
-      setItourisms(filteredItourisms);
+      setTours(filteredTours);
     }
   };
 
@@ -42,14 +53,13 @@ const TourismI = () => {
 
   return (
     <>
-      <section id="tiheader">
+      <section id="teheader">
         <header>
-          <p>
-            Turismul din Moldova ce ți-l poate oferi <span>Jauntie</span>
-          </p>
+          <p>Turismul din Moldova ce ți-l poate oferi <span>Jauntie</span></p>
           <hr />
         </header>
       </section>
+
       <section id="searchbar">
         <div id="divSB">
           <input
@@ -63,22 +73,24 @@ const TourismI = () => {
           </button>
         </div>
       </section>
-      <section id="timain">
-        {itourisms.map(({ id, attributes }) => (
-          <a href="#" id="a-container" key={id}>
-            <div className="div-container">
-              <img
-                id="a-img"
-                src={`http://localhost:1337${attributes.Poza.data[0].attributes.url}`}
-                alt=""
-              />
-              <p>{attributes.Denumire}</p>
-            </div>
-          </a>
-        ))}
+
+      <section id="temain">
+        {tours.map(({ id, title }) => {
+          // Find the corresponding image for each tour
+          const tourImage = images.find((img) => img.tour_id === id);
+
+          return (
+            <a href="#" id="a-container" key={id}>
+              <div className="div-container">
+                {tourImage && <img id='a-img' src={tourImage.imgurl} alt="" />}
+                <p>{title}</p>
+              </div>
+            </a>
+          );
+        })}
       </section>
     </>
   );
 };
 
-export default TourismI;
+export default TourismE;
